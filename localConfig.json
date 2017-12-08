@@ -1,0 +1,27 @@
+{
+	"proxyUrl": "/mapstore/proxy/?url=",
+	"geoStoreUrl": "/mapstore/rest/geostore",
+	"printUrl": "https://demo.geo-solutions.it/geoserver/pdf/info.json",
+  "themePrefix": "console",
+	"translationsPath": "./MapStore2/web/client/translations",
+	"defaultMapOptions": {
+		"cesium": {
+				"flyTo": true,
+				"navigationTools": true,
+				"terrainProvider": {
+						"type": "cesium",
+						"url": "https://assets.agi.com/stk-terrain/world",
+						"requestVertexNormals": true
+				}
+		}
+	},
+	"plugins": {
+			"desktop": ["Map", "Home","GlobeViewSwitcher", {
+					"name": "Toolbar",
+					"id": "NavigationBar",
+					"cfg": {
+							"id": "navigationBar"
+					}
+			}]
+	}
+}
